@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+    
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color:#F8F8F8;
+    position: relative;
+    padding-top: 0.1px;
+}
+#nav{
+    height: 11vh;
+    width: 100%;
+    /* background-color: rgb(35, 173, 211); */
+    margin-top:40px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+    height: 100%;
+    width: 20%;
+    /* background-color: rgb(157, 204, 17); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: "Anton", sans-serif; */
+    font-family: monument;
+    font-size: 45px;
+    letter-spacing: -1px;
+}
+#nav h2{
+    font-size: 26px;
+    font-weight: 500;
+    height: 100%;
+    width: 20%;
+    /* background-color: rgb(157, 204, 17); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right:2px solid black ;
+    
+}
+#nav h2:nth-last-child(2){
+    width: 29%;
+    /* background-color: red; */
+    
+    
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+    border: none;
+    /* background-color: blue; */
+}
+#center{
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 4vw;
+    position: relative;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+#overlay{
+    height: 52%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    padding: 3vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(0.5px);
+
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+
+}
+#over1 h1{
+    font-family: monument;
+    font-size: 3.6vw;
+    
+    
+}
+#over1 h2 {
+    
+    font-size: 1vw;
+    padding: 2vw 2.2vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border:1px solid #fff ; 
+    border-bottom:2px solid #fff ; 
+    
+}
+
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 1.5vw 0;
+    
+
+}
+#over2 h4{
+    font-size: 1.3vw;
+    font-weight: 500;
+
+}
+#over2 img{
+    height: 3vw;
+
+}
+#scroll{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    /* padding: 1vw; */
+    white-space:nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container{
+    height: 100%;
+    width: 110%;
+    /* background-color: blue; */
+    display: inline-block;
+    padding: 2vh;
+    animation-name: anime;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    height: 92%;
+    width: 15%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 30% ,30% ;
+    margin: 1vw;
+    
+}
+@keyframes anime {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+    
+}
